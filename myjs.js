@@ -35,7 +35,14 @@ f_username.addEventListener('blur', function() {
     toggle(f_username);
     toggle(username);
 })
+f_username.addEventListener('keypress',function() {
+    if (event.keyCode === 13) {
+        event.target.blur();
+    }
+});
+
 // ===== name ===== \\
+
 realName.addEventListener('click', function() {
     toggle(f_realName);
     toggle(realName);
@@ -46,7 +53,14 @@ f_realName.addEventListener('blur', function() {
     toggle(f_realName);
     toggle(realName);
 })
+f_realName.addEventListener('keypress',function() {
+    if (event.keyCode === 13) {
+        event.target.blur();
+    }
+});
+
 // ===== occupation ===== \\
+
 occupation.addEventListener('click', function() {
     toggle(f_occupation);
     toggle(occupation);
@@ -57,8 +71,14 @@ f_occupation.addEventListener('blur', function() {
     toggle(f_occupation);
     toggle(occupation);
 })
+f_occupation.addEventListener('keypress',function() {
+    if (event.keyCode === 13) {
+        event.target.blur();
+    }
+});
 
 // ===== bio ===== \\
+
 bio.addEventListener('click', function() {
     toggle(bio);
     toggle(f_bio);
@@ -68,6 +88,9 @@ f_bio.addEventListener('blur', function() {
     toggle(bio);
     toggle(f_bio);
     bio.innerHTML = f_bio.value;
-    console.log(f_bio.value);
 })
-f_bio.addEventListener('keydown', exit());
+f_bio.addEventListener('keypress',function() {
+    if (event.keyCode === 13) {
+        event.target.blur();
+    }
+});
