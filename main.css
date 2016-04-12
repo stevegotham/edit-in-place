@@ -1,0 +1,74 @@
+
+body {
+    background-color: #aaa;
+    width: 100%;
+}
+
+img {
+    height: 200px;
+    width: 200px;
+    position: relative;
+    float: right;
+    margin-bottom: 5px;
+}
+
+div {
+    width: 200px;
+    height: 25px;
+    border: 1px black solid;
+    margin: 4px 0;
+    padding: 3px;
+}
+
+input {
+    width: 200px;
+    height: 25px;
+    border: 1px black solid;
+    margin: 4px 0;
+    padding: 3px;
+}
+
+textarea {
+    width: 480px;
+    height: 95px;
+    border: 1px black solid;
+    margin-left: 2px;
+    padding: 3px;
+    font-size: .85em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+#profile-container {
+    margin: 0 auto;
+    width: 500px;
+    height: 350px;
+    padding: 10px;
+    background-color: white;
+    z-index: 1;
+}
+
+#bio {
+    margin: 7px 0;
+    padding: 5px;
+    width: 480px;
+    height: 95px;
+    border: 1px black solid;
+}
+
+#f-bio {
+    margin: 7px 0;
+    padding: 5px;
+    border: 1px black solid;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: inherit;
+}
