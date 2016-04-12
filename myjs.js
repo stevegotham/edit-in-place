@@ -16,15 +16,8 @@ var toggle = function (el) {
     }
 }
 
-var exit = function(key, el) {
-    if (key === 13) {
-        el.blur();
-    }
-}
-
-
-
 // ===== user name ===== \\
+
 username.addEventListener('click', function() {
     toggle(f_username);
     toggle(username);
